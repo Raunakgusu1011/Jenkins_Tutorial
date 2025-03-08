@@ -1,0 +1,15 @@
+server:
+  port: 408
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/family
+    username: root
+    password: 101199
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+    open-in-view: false
