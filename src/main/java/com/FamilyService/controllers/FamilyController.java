@@ -19,7 +19,7 @@ public class FamilyController {
     @Autowired
     private FamilyService familyService;
     @PostMapping
-    public ResponseEntity<Family> saveFamilyMember(@RequestBody Family family){
+    public ResponseEntity<Family> saveFamMember(@RequestBody Family family){
         return new ResponseEntity<Family>(familyService.saveFamilyMembers(family), HttpStatus.CREATED);
     }
     @GetMapping
